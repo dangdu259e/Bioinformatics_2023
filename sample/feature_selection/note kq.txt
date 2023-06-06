@@ -1,0 +1,13 @@
+Kết quả được save vào file result.txt
+
+ý nghĩa là:
+
+pha1: sử trích xuất feature dựa trên việc chọn số feature:
+    + sử dụng RFE_MLR: Multiple linear regression: Hoàn thành
+    + sử dụng RFE_DT: decision tree: Hoàn thành
+    + sử dụng RFE_GA: genetic algorithm : chưa hoàn thành
+
+pha2: sử dụng mô hình học máy test với số lượng feature đã lấy tương ứng với từng pha1 và đưa ra kết quả:
+    + DT: Hoàn thành
+    + SVM: Hoàn thành
+    + KNN: Hoàn thành

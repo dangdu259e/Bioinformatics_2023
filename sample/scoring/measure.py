@@ -17,9 +17,9 @@ def cal_measure(y_true, y_pred):
     # True negative rate (TNR)
     tnr = sp
     # False positive rate (FPR)
-    fpr = 1 - sp
-    for i in range(len(fpr) - 1)):
-        AUC = sum((tpr[i+1] + tpr[i]) * (fpr[i+1] - fpr[i]) / 2)
+    # fpr = 1 - sp
+    # for i in range(len(fpr) - 1)):
+    #     AUC = sum((tpr[i+1] + tpr[i]) * (fpr[i+1] - fpr[i]) / 2)
 
     return sn, sp, acc, mcc
 
