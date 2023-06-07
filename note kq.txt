@@ -1,0 +1,28 @@
+Kết quả được save vào file result.txt
+
+ý nghĩa là:
+
+pha1: sử trích xuất feature dựa trên việc chọn số feature:
+    + sử dụng RFE_MLR: Multiple linear regression: Hoàn thành
+    + sử dụng RFE_DT: decision tree: Hoàn thành
+    + sử dụng RFE_GA: genetic algorithm : chưa hoàn thành
+
+pha2: sử dụng mô hình học máy test với số lượng feature đã lấy tương ứng với từng pha1 và đưa ra kết quả:
+    + DT: Hoàn thành
+    + SVM: Hoàn thành
+    + KNN: Hoàn thành
+
+Kết quả lọc báo cáo các trường hợp tốt nhất:
+
+feature_selection_method	n_feature_to_select	model_name	sn	sp	acc	mcc	auc
+(*) Phương pháp trích xuất đặc trưng RFE_DT ==> Đánh giá lại với các mô hình học máy
+RFE_DT	45	KNN	0.875	0.545454545	0.740740741	0.369409417	0.710227273
+RFE_DT	3	KNN	0.6875	0.727272727	0.703703704	0.232526531	0.707386364
+RFE_DT	4	SVM	0.625	0.636363636	0.62962963	0.14299236	0.630681818
+RFE_DT	2	DT	0.625	0.545454545	0.592592593	0.097312368	0.585227273
+
+(*) Phương pháp trích xuất đặc trưng RFE_MLR ==> Đánh giá lại với các mô hình học máy
+RFE_MLR	56	KNN	0.75	0.545454545	0.666666667	0.194051466	0.647727273
+RFE_MLR	27	DT	0.5625	0.727272727	0.62962963	0.148295921	0.644886364
+RFE_MLR	8	SVM	0.6875	0.454545455	0.592592593	0.091409053	0.571022727
+
