@@ -1,0 +1,6 @@
+I) Cài đặt biến môi trường trong linux
+	1) Cài đặt biến môi trường tạm thời trong linux 
+		$PATH
+		export PATH:$PATH:/path/to/directory
+	2) Cài đặt biến môi trường vĩnh viễn
+		~/.bashrc
